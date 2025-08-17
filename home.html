@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Longevita — Health Blend</title>
+  <meta name="description" content="Longevita — premium vegan health blend crafted for longevity. Plant-based protein powders, sustainably sourced." />
+  <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">L</div>
+        <div>
+          <h1>Longevita</h1>
+          <div style="font-size:0.8rem;color:#bfbfbf">Health Blend — Vegan Protein</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="./about.html">About</a>
+        <a href="#featured">Products</a>
+        <a href="#variants">Variants</a>
+        <a href="./about.html#contact">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <button class="cart-btn" id="view-cart">Cart <span class="cart-count" id="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-card">
+        <div class="eyebrow">From Nature • For Longevity</div>
+        <h2>Longevita Health Blend — Premium Plant-Based Protein</h2>
+        <p>Crafted from premium dry fruits, seeds and plant proteins. Zero added sugar, zero preservatives — a luxurious daily ritual that fuels your body and supports long-term vitality.</p>
+        <a href="#featured" class="cta">Shop Featured</a>
+        <div style="margin-top:20px" class="variants">
+          <div class="variant">250g</div>
+          <div class="variant">500g</div>
+          <div class="variant">1kg</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="mock-product" aria-hidden>
+          <img src="https://via.placeholder.com/280x280.png?text=Longevita+Jar" alt="Longevita product">
+          <div class="mock-meta">
+            <h3>Longevita Health Blend</h3>
+            <div style="height:8px"></div>
+            <div class="price">₹399 — 250g</div>
+            <div style="height:6px"></div>
+            <small style="color:#bdbdbd">Vegan • Gluten free • No added sugar</small>
+          </div>
+        </div>
+
+        <div style="text-align:center; color:#bfbfbf; max-width:360px; font-size:0.95rem;">
+          <p style="margin:12px 0 0 0">Experience the richness of dry fruits and clean protein in each scoop — crafted for daily wellness and lasting energy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="section" id="featured">
+      <h3>Featured Products</h3>
+      <div class="grid" id="product-grid">
+        <!-- Product cards injected by script -->
+      </div>
+    </section>
+
+    <!-- Variants / Sizes -->
+    <section class="section" id="variants">
+      <h3>Our Sizes & Variants</h3>
+      <div style="display:flex; gap:16px; flex-wrap:wrap">
+        <div style="background:var(--card); padding:16px; border-radius:12px; border:1px solid rgba(255,255,255,0.02)">
+          <h4 style="color:var(--gold); margin:0 0 8px 0">Longevita Health Blend — 250g</h4>
+          <p style="margin:0 0 8px 0; color:#cfcfcf">Perfect for first-time buyers and travel.</p>
+          <div style="font-weight:800">₹399</div>
+        </div>
+        <div style="background:var(--card); padding:16px; border-radius:12px; border:1px solid rgba(255,255,255,0.02)">
+          <h4 style="color:var(--gold); margin:0 0 8px 0">Longevita Health Blend — 500g</h4>
+          <p style="margin:0 0 8px 0; color:#cfcfcf">Value pack with extended supply.</p>
+          <div style="font-weight:800">₹699</div>
+        </div>
+        <div style="background:var(--card); padding:16px; border-radius:12px; border:1px solid rgba(255,255,255,0.02)">
+          <h4 style="color:var(--gold); margin:0 0 8px 0">Longevita Gold — Senior Wellness</h4>
+          <p style="margin:0 0 8px 0; color:#cfcfcf">Additional adaptogens & vitamins for elders.</p>
+          <div style="font-weight:800">₹799</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="subscribe">
+      <div style="flex:1">
+        <strong style="color:var(--gold); display:block">Join the Longevita circle</strong>
+        <div style="color:#bfbfbf">Subscribe for launch updates, exclusive drops and early access to deals.</div>
+      </div>
+      <input id="email-input" type="email" placeholder="Your email address" />
+      <button id="subscribe-btn">Subscribe</button>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div style="max-width:var(--maxw); margin:0 auto; padding:0 20px">
+      <div style="display:flex; justify-content:space-between; gap:30px; flex-wrap:wrap;">
+        <div>
+          <h4 style="color:var(--gold); margin:0 0 8px 0">Longevita</h4>
+          <div style="color:#bfbfbf">Premium plant-based blends for longevity. Crafted in India.</div>
+        </div>
+        <div>
+          <h4 style="color:var(--gold); margin:0 0 8px 0">Follow</h4>
+          <a href="#" target="_blank">@longevita.official</a>
+        </div>
+        <div>
+          <h4 style="color:var(--gold); margin:0 0 8px 0">Support</h4>
+          <div style="color:#bfbfbf">hello@longevita.health</div>
+        </div>
+      </div>
+
+      <div style="margin-top:22px; color:#9f9f9f; font-size:0.9rem">
+        © 2025 Longevita. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Sample product data (replace images and text as required)
+    const PRODUCTS = [
+      {
+        id: 'lv-250',
+        title: 'Longevita Health Blend — 250g',
+        price: 399,
+        description: 'Premium dry fruit based vegan protein. Zero added sugar.',
+        img: 'https://via.placeholder.com/600x400.png?text=Longevita+250g'
+      },
+      {
+        id: 'lv-500',
+        title: 'Longevita Health Blend — 500g',
+        price: 699,
+        description: 'Value pack with extended supply for daily nutrition.',
+        img: 'https://via.placeholder.com/600x400.png?text=Longevita+500g'
+      },
+      {
+        id: 'lv-gold',
+        title: 'Longevita Gold — Senior Wellness',
+        price: 799,
+        description: 'Enhanced formula with adaptogens & extra vitamins.',
+        img: 'https://via.placeholder.com/600x400.png?text=Longevita+Gold'
+      }
+    ];
+
+    // Render products
+    const grid = document.getElementById('product-grid');
+    PRODUCTS.forEach(p => {
+      const card = document.createElement('div');
+      card.className = 'product';
+      card.innerHTML = `
+        <img src="${p.img}" alt="${p.title}" />
+        <div>
+          <h4>${p.title}</h4>
+          <p>${p.description}</p>
+        </div>
+        <div class="meta">
+          <div style="font-weight:800">₹${p.price}</div>
+          <div style="display:flex; gap:8px">
+            <button class="btn" onclick="viewDetails('${p.id}')">View</button>
+            <button class="btn primary" onclick="addToCart('${p.id}')">Add to cart</button>
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    // Cart logic (simple localStorage cart)
+    function getCart(){
+      return JSON.parse(localStorage.getItem('longevita_cart') || '[]');
+    }
+    function setCart(c){ localStorage.setItem('longevita_cart', JSON.stringify(c)); updateCartCount(); }
+    function updateCartCount(){
+      const c = getCart();
+      const count = c.reduce((s,i)=> s + i.qty, 0);
+      document.getElementById('cart-count').textContent = count;
+    }
+    function addToCart(id){
+      const cart = getCart();
+      const prod = PRODUCTS.find(p=>p.id===id);
+      if(!prod) return alert('Product not found');
+      const existing = cart.find(i=>i.id===id);
+      if(existing) existing.qty += 1;
+      else cart.push({ id: prod.id, title: prod.title, price: prod.price, qty: 1 });
+      setCart(cart);
+      alert(prod.title + ' added to cart');
+    }
+    function viewDetails(id){
+      const p = PRODUCTS.find(x=>x.id===id);
+      if(!p) return;
+      alert(p.title + '\\n\\n' + p.description + '\\n\\nPrice: ₹' + p.price);
+    }
+
+    // Cart modal (simple)
+    document.getElementById('view-cart').addEventListener('click', ()=>{
+      const cart = getCart();
+      if(!cart.length) return alert('Your cart is empty');
+      let summary = 'Your Cart:\\n\\n';
+      let total = 0;
+      cart.forEach(item => {
+        summary += `${item.title} — ${item.qty} x ₹${item.price} = ₹${item.qty * item.price}\\n`;
+        total += item.qty * item.price;
+      });
+      summary += '\\nTotal: ₹' + total + '\\n\\n(This is a demo — no checkout connected)';
+      alert(summary);
+    });
+
+    // simple subscribe behavior
+    document.getElementById('subscribe-btn').addEventListener('click', ()=>{
+      const email = document.getElementById('email-input').value.trim();
+      if(!email || !email.includes('@')) return alert('Please enter a valid email');
+      // demo: store locally
+      const subs = JSON.parse(localStorage.getItem('longevita_subs') || '[]');
+      if(subs.includes(email)) return alert('You are already subscribed');
+      subs.push(email);
+      localStorage.setItem('longevita_subs', JSON.stringify(subs));
+      alert('Thanks! You are subscribed.');
+      document.getElementById('email-input').value = '';
+    });
+
+    // init
+    updateCartCount();
+  </script>
+</body>
+</html>

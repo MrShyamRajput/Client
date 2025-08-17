@@ -1,0 +1,246 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #000;
+    line-height: 1.6;
+}
+a {
+    color: gold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: black;
+    border-bottom: 2px solid gold;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    color: gold;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 600;
+}
+nav ul li {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80vh;
+    padding: 0 2rem;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+}
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: gold;
+}
+.hero p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+.btn-primary {
+    background: gold;
+    color: black;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.btn-primary:hover {
+    background: #b8860b;
+}
+
+main {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    color: gold;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid gold;
+    padding-bottom: 0.25rem;
+    max-width: max-content;
+}
+
+#about p {
+    max-width: 700px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2rem;
+}
+.benefit-item {
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+.benefit-item h4 {
+    color: gold;
+    margin-bottom: 0.75rem;
+}
+.benefit-item p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+#nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    color: gold;
+}
+#nutrition th, #nutrition td {
+    padding: 1rem;
+    border: 1px solid gold;
+    text-align: left;
+}
+#nutrition th {
+    background: #222;
+    font-weight: 700;
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.testimonial {
+    background: #111;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid gold;
+    font-style: italic;
+    color: #ddd;
+}
+.testimonial strong {
+    color: gold;
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+}
+
+#faq details {
+    background: #111;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#faq summary {
+    font-weight: 700;
+    color: gold;
+}
+
+#contact form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#contact label {
+    font-weight: 600;
+    color: gold;
+}
+#contact input, #contact textarea {
+    padding: 0.75rem;
+    border: 1px solid gold;
+    border-radius: 4px;
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+}
+#contact button {
+    max-width: 200px;
+    padding: 1rem;
+    background: gold;
+    color: black;
+    border: none;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    align-self: start;
+}
+#contact button:hover {
+    background: #b8860b;
+}
+
+#buy {
+    text-align: center;
+    background: #111;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+#buy h3 {
+    font-size: 2rem;
+    color: gold;
+    margin-bottom: 1rem;
+}
+#buy p {
+    color: #ddd;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: black;
+    border-top: 2px solid gold;
+    font-size: 0.9rem;
+    color: #aaa;
+}
